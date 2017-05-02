@@ -1,0 +1,55 @@
+@import 'main';
+@import 'bootstrap/bootstrap/mixins/grid';
+
+body {
+    .margem{
+        img{
+            margin-left: 25% !important;
+            height: 260px;
+            box-shadow: 10px 10px 5px #888888; 
+        }
+        
+    }
+    #form-search{
+        @include make-md-column(12);
+        @include make-md-column-offset(3);      
+    }
+
+    #anuncio {
+        a{
+        color: #fff;   
+        padding: 10px !important;
+        background: black;
+		box-shadow: inset 1px 1px 0px 0px rgba(0, 0, 0, 0.025), 1px 1px 0px 0px rgba(255, 255, 255, 0.025);
+        border-radius: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        @include make-md-column-offset(5);
+        
+            &:hover{
+            transition: 1s linear;    
+            background: #666666;
+        }
+    }
+    }
+    
+    table{
+        margin-top: 20px;
+        th{
+            text-transform: uppercase;
+            color: black;
+        }
+        td{
+            text-align: left !important;
+            border-top: 1px solid darkgrey;
+            border-bottom: 1px solid darkgray;
+            vertical-align: middle;
+
+            img{
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        }
+    }
+}
+

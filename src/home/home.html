@@ -1,0 +1,35 @@
+<section class="container box feature1">
+
+    <div class="row">
+        <div class="8u 12u(mobile)" id="anuncio">
+            <a href="#/anuncio" class="cssanuncio"> Criar anúncio </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="8u 12u(mobile)">
+            <header class="first major">
+                <form id="form-search" action=""><input type="text" placeholder="Que livro deseja encontrar?" ng-keypress="listarPorNome($event)" 
+                    ng-model="livro.nome">
+  
+                </form>
+            </header>
+        </div>
+    </div>
+    <div class="row margem">
+        <div class="4u 12u(mobile)" ng-repeat="livro in livros">
+            <section>
+                <a href="#" class="image featured"><img ng-src='data:image/*; base64,{{livro.imagem}}'/></a>
+                <header class="second icon fa-book">
+                    <h3>{{livro.nome}}</h3>
+                    <p>{{livro.autor}}</p>
+                    <p>O preço fica aqui (não disse onde)</P>
+                </header>
+            </section>
+        </div>
+    </div>
+    <div class="row">
+        <div class="12u">
+            <p></p>
+        </div>
+    </div>
+</section>
