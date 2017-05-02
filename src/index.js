@@ -11,9 +11,13 @@ angular.module('easybook', ['ngRoute', 'ngNotify', 'ngFileUpload', 'checklist-mo
                 templateUrl: 'src/anuncio/anuncio.html',
                 controller: 'AnunCtrl'
             })
+            .when('/cadastro', {
+                templateUrl: 'src/cadastro/cadastro.html',
+                controller: 'CadCtrl'
+            })
             .when('/login', {
-                templateUrl: 'src/login/login.html',
-                controller: 'UserCtrl'
+                templateUrl: 'src/cadastro/cadastro.html',
+                controller: 'LogCtrl'
             })
             .otherwise({
                 redirectTo: '/'

@@ -1,7 +1,8 @@
 <section class="container">
-    <button type="button" id="btn-cadastrar" ng-click="show()">
+    <button class="fa fa-plus-square" type="button" id="btn-cadastrar" ng-click="show()">
 				Adicionar Livro
 		</button>
+
     <form id="form-livro" ng-submit="savelivro(livro)" method="post" ng-hide="!addLivro">
         <div>
             <label for="imagemBase">Imagem: </label>
@@ -31,8 +32,8 @@
             <input type="text" id="descricao" name="descricao" ng-model="livro.descricao" maxlength="80" minlength="1"/>
         </div> </br>
 
-        <input type="submit" id="btn-salvar" value="Salvar" class="btn btn-primary" />
-        <input type="button" id="btn-cancelar" value="Cancelar" ng-click="hide()" />
+        <input type="submit" id="btn-salvar" value="Salvar" id="btn btn-save" />
+        <input type="button" id="btn-cancelar" value="Cancelar" ng-click="hide()" id="btn btn-cancel" />
     </form>
     <table>
         <thead>
@@ -53,8 +54,8 @@
                 <td style = width:15%>{{livro.autor}}</td>
                 <td style = width:15% >{{livro.editora}}</td>
                 <td class = "teste"><img src="data: image / *; base64,{{livro.imagem}}" id="id_imagem" height="100px" width="100px"/></td>
-                <td><button type="button" ng-click="editar(livro)" id="btn-editar"> editar </button>     </td>
-                <td><input type="button" ng-click="remover(livro)" id="btn-deletar" value="Deletar" class="btn btn-danger" /></td>
+                <td><button class="fa fa-pencil-square-o" type="button" ng-click="editar(livro)" id="btn-editar"> editar </button></td>
+                <td><button type="button" ng-click="remover(livro)" id="btn-deletar" class="fa fa-times"> deletar </button></td>
             </tr>
         </tbody>
     </table>

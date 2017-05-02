@@ -2,6 +2,28 @@
 @import 'bootstrap/bootstrap/mixins/grid';
 
 body {
+    #btn-cadastrar{
+        font-size: 12px !important;
+    }
+    #btn-editar{
+        font-size: 12px !important;
+    }
+    #btn-deletar{
+        font-size: 12px !important;
+    }
+    #btn-save{
+        font-size: 12px !important;
+    }
+    #btn-cancel{
+        font-size: 12px !important;
+    }
+
+    #form-cadastro{
+        div{
+            width: 60%;
+        }
+    }
+     
     .margem{
         img{
             margin-left: 25% !important;
@@ -24,7 +46,7 @@ body {
         border-radius: 10px;
         text-decoration: none;
         text-transform: uppercase;
-        @include make-md-column-offset(5);
+        @include make-md-column-offset(6);
         
             &:hover{
             transition: 1s linear;    
@@ -40,7 +62,7 @@ body {
             color: black;
         }
         td{
-            text-align: left !important;
+            text-align: center !important;
             border-top: 1px solid darkgrey;
             border-bottom: 1px solid darkgray;
             vertical-align: middle;
